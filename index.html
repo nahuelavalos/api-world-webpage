@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body  style="background-color: #fafbfc;">
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Fontawesome Logos -->
+    <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e8ecf0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">API World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <a href="https://nahuelavalos.github.io/" target="_blank">
+              <button class="btn" type="submit">
+                <i class="fas fa-globe" style='font-size:20px;color:green;text-align: center;'></i>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/nahuelavalos92/" target="_blank">
+              <button class="btn" type="submit">
+                <i class="fab fa-linkedin-in" style='font-size:20px;color:#0e76a8;text-align: center;'></i>
+              </button>
+            </a>
+            <a href="https://github.com/nahuelavalos" target="_blank">
+              <button class="btn" type="submit">
+                <i class="fab fa-github-alt" style='font-size:20px;color:black;text-align: center;'></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <!--h1>Hello, world!</h1-->
+        <br>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Node.js</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Python</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Go</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="form-outline mb-4">
+                    <textarea class="form-control form-control-sm font-monospace" id="textAreaNodeJS" rows="18" style="overflow:auto;resize:none; background-color: #daeed7;" disabled></textarea>
+                    <button type="button justify-content-md-end" class="btn btn-outline-primary btn-sm copy" style="margin-top: 10px; margin-right: 0px; float: right;">Copy</button>
+                    <!--label class="form-label" for="textAreaExample6">100% width of the parent</label-->
+                    <br><br><h3>Environment</h3>
+                    <textarea class="form-control form-control-sm font-monospace" id="nodejs-env" rows="6" style="text-size-adjust: initial; resize: none; background-color: #f1f8ff; border: none;" disabled></textarea>
+                    <br><h3>Run</h3>
+                    <textarea class="form-control form-control-sm font-monospace" id="nodejs-run" rows="1" style="text-size-adjust: initial; resize: none; background-color: #f0fff4; border: none;" disabled></textarea>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          </div>
+      </div>
+      <!--nav class="navbar navbar-light" style="background-color: #e1e4e8">
+        <div class="container-fluid">
+          <a class="navbar-brand">nahuel avalos</a>
+        </div>
+      </nav-->
+      <script src="app.js"></script>
+  </body>
+</html>

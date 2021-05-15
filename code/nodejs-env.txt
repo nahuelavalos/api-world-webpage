@@ -1,0 +1,6 @@
+## Install Node.js (PC)
+https://nodejs.org/es/download/
+$ node -v
+
+## Install Express (Project)
+$ npm install express
