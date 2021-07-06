@@ -17,7 +17,6 @@ def ping():
 # GET (Routes)
 @app.route('/product')
 def getProducts():
-    # return jsonify(products)
     return jsonify({'products': products})
 
 # Create (Routes)
