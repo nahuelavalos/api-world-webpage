@@ -1,0 +1,6 @@
+## Install Python (PC)
+https://www.python.org/downloads/
+$ python
+
+## Install Flask (PC)
+$ pip install Flask

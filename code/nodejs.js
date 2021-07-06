@@ -78,6 +78,4 @@ app.get('/people/:personId', function(req, res){
 });
 
 //Port
-var port = 8080;
-app.listen(port);
-console.log("Escuchando en el puerto " + port);
+app.listen(8080);
