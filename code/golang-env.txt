@@ -1,0 +1,6 @@
+## Install Go (PC)
+https://golang.org/dl/
+$ go version
+
+## Install Mux (PC)
+$ go get -v -u github.com/gorilla/mux

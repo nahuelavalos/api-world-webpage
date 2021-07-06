@@ -52,6 +52,33 @@ const pythonRun = async file => {
 }
 pythonRun('code/python-run.txt');
 
+const golang = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    //console.log(text);
+    var code = document.getElementById("textAreaGolang");
+    code.textContent = text
+}
+golang('code/golang.go');
+
+const golangEnv = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    //console.log(text);
+    var code = document.getElementById("golang-env");
+    code.textContent = text
+}
+golangEnv('code/golang-env.txt');
+
+const golangRun = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    //console.log(text);
+    var code = document.getElementById("golang-run");
+    code.textContent = text
+}
+golangRun('code/golang-run.txt');
+
 const btnCopyNodeJS = document.querySelectorAll('.copyNodeJS')
 btnCopyNodeJS.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -69,6 +96,19 @@ const btnCopyPython = document.querySelectorAll('.copyPython')
 btnCopyPython.forEach(btn => {
     btn.addEventListener('click', () => {
         var code = document.getElementById("textAreaPython");
+        var input = document.createElement('textarea');
+        input.innerHTML = code.textContent;
+        document.body.appendChild(input);
+        input.select();
+        var result = document.execCommand('copy');
+        document.body.removeChild(input);
+    })
+})
+
+const btnCopyGolang = document.querySelectorAll('.copyGolang')
+btnCopyGolang.forEach(btn => {
+    btn.addEventListener('click', () => {
+        var code = document.getElementById("textAreaGolang");
         var input = document.createElement('textarea');
         input.innerHTML = code.textContent;
         document.body.appendChild(input);
