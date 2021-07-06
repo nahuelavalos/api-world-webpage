@@ -1,5 +1,2 @@
-# Build
 $ go build server.go
-
-# Run
 $ go run server.go
