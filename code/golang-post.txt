@@ -1,0 +1,10 @@
+curl --location 'http://localhost:8080/people' \
+--header 'Content-Type: application/json' \
+--data '{
+    "firstname": "Lisandro",
+    "lastname": "Lopez",
+    "address": {
+        "street": "Av. Mitre",
+        "number": "22"
+    }
+}'

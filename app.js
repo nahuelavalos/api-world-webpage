@@ -73,11 +73,50 @@ golangEnv('code/golang-env.txt');
 const golangRun = async file => {
     const response = await fetch(file);
     const text = await response.text();
-    //console.log(text);
     var code = document.getElementById("golang-run");
     code.textContent = text
 }
 golangRun('code/golang-run.txt');
+
+const golangGetPeople = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    var code = document.getElementById("golang-get-people");
+    code.textContent = text
+}
+golangGetPeople('code/golang-get-people.txt');
+
+const golangGetPerson = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    var code = document.getElementById("golang-get-person");
+    code.textContent = text
+}
+golangGetPerson('code/golang-get-person.txt');
+
+const golangPost = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    var code = document.getElementById("golang-post");
+    code.textContent = text
+}
+golangPost('code/golang-post.txt');
+
+const golangPut = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    var code = document.getElementById("golang-put");
+    code.textContent = text
+}
+golangPut('code/golang-put.txt');
+
+const golangDelete = async file => {
+    const response = await fetch(file);
+    const text = await response.text();
+    var code = document.getElementById("golang-delete");
+    code.textContent = text
+}
+golangDelete('code/golang-delete.txt');
 
 const btnCopyNodeJS = document.querySelectorAll('.copyNodeJS')
 btnCopyNodeJS.forEach(btn => {
